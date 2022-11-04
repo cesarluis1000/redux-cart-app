@@ -33,7 +33,7 @@ const Products = () => {
       .catch((error) => {
         console.log(error)
       })
-  }, [])
+  }, [category])
 
   const addProduct = (product) => {
     dispatch(addToCart(product))
