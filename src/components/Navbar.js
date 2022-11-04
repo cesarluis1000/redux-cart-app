@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { useLocation, Link, NavLink, Outlet } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStore, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
@@ -70,7 +70,6 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        <Outlet />
       </div>
   )
 }

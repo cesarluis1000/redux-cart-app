@@ -1,6 +1,5 @@
 import React from 'react'
-import { useParams } from "react-router-dom";
-import Products from './Products';
+import { Outlet, useParams } from "react-router-dom";
 
 const ProductsCategory = () => {
     const { category } = useParams();
@@ -8,7 +7,7 @@ const ProductsCategory = () => {
   return (
     <div>
         <h1 className="text-center text-primary mt-3">Categoria {category}</h1>
-        <Products />
+        <Outlet />
     </div>
   )
 }
